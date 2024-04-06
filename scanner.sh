@@ -21,6 +21,14 @@ else
 
 fi
 
+if dpkg -l | grep -q "^ii.*$package3"; then
+	echo "$package3 is already installed"
+
+else
+	sudo apt install $package3
+
+
+
 ## simple scanner for pentesting
 
 echo "Enter the target ip address"
