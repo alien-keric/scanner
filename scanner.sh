@@ -35,4 +35,4 @@ echo "Okay let's have some fun by scanning our target $target"
 $package1 -a $target --ulimit 5000 -- -sC -sV -oN rustscan_output.txt
 
 ##nmap scanning goes here
-$package2 -sC -sV -p0-65555 -T4 -oN nmap_scanning.txt -vvv
+$package2 -sC -sV -p0-65535 -T4 -oN nmap_scanning.txt -vvv
